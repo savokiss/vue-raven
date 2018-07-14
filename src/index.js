@@ -6,8 +6,14 @@ export default {
     const _options = Object.assign({
       dsn: options.dsn || '',
       version: options.version || 'not provided',
+      disableReport: options.disableReport || false,
       disableAutoReport: options.disableAutoReport || false
     }, options)
+
+    if (_options.disableReport) {
+      _options.dsn = ''
+      console.log('Sentry has disabled')
+    }
 
     Raven.config(_options.dsn)
 

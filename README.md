@@ -23,7 +23,7 @@ import pkg from '../package.json'
 
 Vue.use(VueRaven, {
   dsn: 'https://<key>@sentry.io/project', // or your custom public dsn
-  version: pkg.version // optional
+  version: pkg.version, // optional
 })
 ```
 
@@ -79,6 +79,7 @@ export default {
 | ------------- | ------------- | ------------- | ------------- |
 | dsn  | `String` | `''` | The Data Source Name |
 | version | `String` | `'not provided'` | Provide Your App Version |
+| disableReport | `Boolean` | `false` | Disable All Report In Your App, You Can Use `process.env.NODE_ENV === 'development'` For Development |
 | disableAutoReport | `Boolean` | `false` | Disable Auto Report In Vue |
 
 ## Lisence
