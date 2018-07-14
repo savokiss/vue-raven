@@ -3,7 +3,7 @@
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 [![dependencies](https://img.shields.io/david/savokiss/vue-raven.svg)]()
 
-Using sentry -> raven.js in vue
+Using sentry's `raven.js` in vue
 
 ## Installation
 
@@ -80,7 +80,7 @@ export default {
 | dsn  | `String` | `''` | The Data Source Name |
 | version | `String` | `'not provided'` | Provide Your App Version |
 | disableReport | `Boolean` | `false` | Disable All Report In Your App, You Can Use `process.env.NODE_ENV === 'development'` For Development |
-| disableAutoReport | `Boolean` | `false` | Disable Auto Report In Vue |
+| disableVueReport | `Boolean` | `false` | Disable Auto Report In Vue |
 
 ## Lisence
 
