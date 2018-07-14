@@ -1,4 +1,7 @@
 # vue-raven
+[![npm (scoped with tag)](https://img.shields.io/npm/v/@ecg/vue-raven.svg)](https://npmjs.com/package/@ecg/vue-raven)
+[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
+
 Using sentry -> raven.js in vue
 
 ## Installation
@@ -25,7 +28,7 @@ Vue.use(VueRaven, {
 
 ### Manual Report
 
-- In vue file
+- In `.vue` file
 
 ```js
 // some-component.vue
@@ -42,7 +45,7 @@ export default {
 }
 ```
 
-- In js file
+- In `.js` file
 
 ```js
 // api.js
