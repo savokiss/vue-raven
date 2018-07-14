@@ -14,7 +14,7 @@ Configure your dsn first: [Sentry DSN](https://docs.sentry.io/quickstart/#config
 
 ```js
 import Vue from 'vue'
-import VueRaven from '@savo/vue-raven'
+import VueRaven from '@ecg/vue-raven'
 import pkg from '../package.json'
 
 Vue.use(VueRaven, {
@@ -27,7 +27,7 @@ Vue.use(VueRaven, {
 
 - In vue file
 
-```vue
+```js
 // some-component
 export default {
   methods: {
@@ -46,7 +46,7 @@ export default {
 
 ```js
 // api.js
-import { Raven } from '@savo/vue-raven'
+import { Raven } from '@ecg/vue-raven'
 // your service
 export default {
   login (params) {
@@ -73,8 +73,8 @@ export default {
 | Option  | Type | Default  | Info |
 | ------------- | ------------- | ------------- | ------------- |
 | dsn  | `String` | `null` | The Data Source Name |
-| version | `String` | `not provided` | Provide your app version |
-| disableAutoReport | `Boolean` | `false` | Disable auto report in vue |
+| version | `String` | `not provided` | Provide Your App Version |
+| disableAutoReport | `Boolean` | `false` | Disable Auto Report In Vue |
 
 ## Lisence
 
