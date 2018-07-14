@@ -9,7 +9,7 @@ process.env.BABEL_ENV = 'main'
 export default {
   input: 'src/index.js',
   output: {
-    name: 'emitter',
+    name: 'vue-raven',
     file: pkg.main,
     format: 'umd'
   },

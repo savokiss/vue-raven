@@ -26,9 +26,6 @@ export default {
     Raven.setRelease(_options.version)
 
     Vue.prototype.$raven = Raven
-  }
-}
-
-export {
+  },
   Raven
 }
