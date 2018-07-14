@@ -11,3 +11,7 @@
 
 ## Bug Fixes
 - Change option `version`'s default value `'not provided'` to `''`
+
+# v1.0.1
+## Bug Fixes
+- Support IE by adding babel env broswer list
