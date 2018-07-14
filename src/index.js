@@ -17,6 +17,8 @@ export default {
 
     Raven.install()
 
+    Raven.setRelease(_options.version)
+
     Vue.prototype.$raven = Raven
   }
 }
