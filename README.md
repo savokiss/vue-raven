@@ -4,7 +4,7 @@ Using sentry -> raven.js in vue
 ## Installation
 
 ```bash
-$ npm i @savo/vue-raven
+$ npm i @ecg/vue-raven
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ Vue.use(VueRaven, {
 - In vue file
 
 ```js
-// some-component
+// some-component.vue
 export default {
   methods: {
     onSubmit () {
@@ -72,8 +72,8 @@ export default {
 
 | Option  | Type | Default  | Info |
 | ------------- | ------------- | ------------- | ------------- |
-| dsn  | `String` | `null` | The Data Source Name |
-| version | `String` | `not provided` | Provide Your App Version |
+| dsn  | `String` | `''` | The Data Source Name |
+| version | `String` | `'not provided'` | Provide Your App Version |
 | disableAutoReport | `Boolean` | `false` | Disable Auto Report In Vue |
 
 ## Lisence
