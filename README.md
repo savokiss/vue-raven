@@ -55,7 +55,7 @@ export default {
         const user = res.data.user
         // set user context
         // the context will be send with error report
-        Raven.setUser({
+        Raven.setUserContext({
           id: user.id
           username: user.username,
           email: user.email, // omit  or must be email format
