@@ -1,6 +1,6 @@
 {
   "name": "@ecg/vue-raven",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "vue && raven.js intergration",
   "main": "dist/index.js",
   "scripts": {
