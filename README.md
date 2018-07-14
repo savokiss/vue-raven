@@ -1,6 +1,7 @@
 # vue-raven
 [![npm (scoped with tag)](https://img.shields.io/npm/v/@ecg/vue-raven.svg)](https://npmjs.com/package/@ecg/vue-raven)
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
+[![dependencies](https://img.shields.io/david/savokiss/vue-raven.svg)]()
 
 Using sentry -> raven.js in vue
 
@@ -39,6 +40,7 @@ export default {
         Form.submit(/* data */)
       } catch (err) {
         this.$raven.captureException(err)
+        // this.$raven.captureMessage('msg')
       }
     }
   }
@@ -61,7 +63,7 @@ export default {
         Raven.setUserContext({
           id: user.id
           username: user.username,
-          email: user.email, // omit  or must be email format
+          email: user.email, // omit or must be valid email
           // you can provided extra context here 
         })
       }
