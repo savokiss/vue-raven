@@ -1,6 +1,6 @@
 {
   "name": "@ecg/vue-raven",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "vue && raven.js intergration",
   "main": "dist/index.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "babel-eslint": "^8.2.6",
     "babel-jest": "^23.2.0",
     "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015-rollup": "^3.0.0",
     "babel-preset-stage-0": "^6.24.1",
