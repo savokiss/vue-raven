@@ -12,6 +12,6 @@
 ## Bug Fixes
 - Change option `version`'s default value `'not provided'` to `''`
 
-# v1.0.1
+# v1.0.2
 ## Bug Fixes
-- Support IE by adding babel env broswer list
+- Polyfill `Object.assign` for IE
