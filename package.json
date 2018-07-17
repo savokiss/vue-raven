@@ -1,11 +1,12 @@
 {
   "name": "@ecg/vue-raven",
-  "version": "1.0.2",
+  "version": "2.0.2",
   "description": "vue && raven.js intergration",
-  "main": "dist/index.js",
+  "main": "dist/vue-raven.js",
+  "module": "dist/vue-raven.es.js",
+  "unpkg": "dist/vue-raven.min.js",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "build": "bili",
     "unit": "jest --config test/jest.conf.js",
     "test": "cross-env BABEL_ENV=test npm run unit"
   },
@@ -18,21 +19,21 @@
     "raven",
     "sentry"
   ],
-  "author": "savokiss",
+  "author": "savokiss <jaynaruto@qq.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/savokiss/vue-raven/issues"
   },
   "homepage": "https://github.com/savokiss/vue-raven#readme",
+  "dependencies": {
+    "raven-js": "^3.26.3"
+  },
   "devDependencies": {
+    "@babel/plugin-transform-object-assign": "^7.0.0-beta.54",
     "babel-eslint": "^8.2.6",
     "babel-jest": "^23.2.0",
-    "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-transform-object-assign": "^6.22.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015-rollup": "^3.0.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
+    "bili": "^3.1.2",
     "cross-env": "^5.2.0",
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
@@ -40,17 +41,15 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
-    "jest": "^23.2.0",
-    "rollup": "^0.61.2",
-    "rollup-plugin-babel": "^3.0.5",
-    "rollup-plugin-commonjs": "^9.1.3",
-    "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-uglify": "^4.0.0"
+    "jest": "^23.2.0"
   },
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "raven-js": "^3.26.3"
-  }
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "safari >= 10",
+    "not ie <= 8"
+  ]
 }

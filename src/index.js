@@ -31,6 +31,8 @@ const plugin = {
   }
 }
 
-plugin.Raven = Raven
+export {
+  Raven
+}
 
 export default plugin
