@@ -1,9 +1,10 @@
 {
   "name": "@ecg/vue-raven",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "vue && raven.js intergration",
-  "main": "dist/vue-raven.min.js",
+  "main": "dist/vue-raven.js",
   "module": "dist/vue-raven.es.js",
+  "unpkg": "dist/vue-raven.min.js",
   "scripts": {
     "build": "bili",
     "unit": "jest --config test/jest.conf.js",
