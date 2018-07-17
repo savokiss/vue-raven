@@ -4,10 +4,10 @@
  * Released under the MIT License.
  */
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global.vueRaven = factory());
-}(this, (function () { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+	typeof define === 'function' && define.amd ? define(['exports'], factory) :
+	(factory((global.vueRaven = {})));
+}(this, (function (exports) { 'use strict';
 
 	var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
@@ -4171,8 +4171,10 @@
 	    Vue.prototype.$raven = singleton;
 	  }
 	};
-	plugin.Raven = singleton;
 
-	return plugin;
+	exports.Raven = singleton;
+	exports.default = plugin;
+
+	Object.defineProperty(exports, '__esModule', { value: true });
 
 })));

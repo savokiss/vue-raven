@@ -4,6 +4,7 @@
  * Released under the MIT License.
  */
 import Raven from 'raven-js';
+export { default as Raven } from 'raven-js';
 import RavenVue from 'raven-js/plugins/vue';
 
 var plugin = {
@@ -37,6 +38,5 @@ var plugin = {
     Vue.prototype.$raven = Raven;
   }
 };
-plugin.Raven = Raven;
 
 export default plugin;
