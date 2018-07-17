@@ -82,6 +82,10 @@ export default {
 | disableReport | `Boolean` | `false` | Disable All Report In Your App, You Can Use `process.env.NODE_ENV === 'development'` For Development |
 | disableVueReport | `Boolean` | `false` | Disable Auto Report In Vue |
 
+## Related Projects
+- [raven-js](https://github.com/getsentry/raven-js)
+- [vue-raven](https://github.com/anteriovieira/vue-raven)
+
 ## Lisence
 
 MIT

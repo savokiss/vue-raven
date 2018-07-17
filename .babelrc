@@ -3,22 +3,19 @@
     "main": {
       "presets": [
         [
-          "env",
+          "@babel/preset-env",
           {
             "modules": false
           }
-        ],
-        "stage-2"
+        ]
       ],
       "plugins": [
-        "external-helpers",
-        "transform-object-assign"
+        "@babel/plugin-transform-object-assign"
       ]
     },
     "test": {
       "presets": [
-        "env",
-        "stage-2"
+        "@babel/preset-env"
       ]
     }
   }
