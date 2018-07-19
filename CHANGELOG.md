@@ -15,3 +15,7 @@
 # v1.0.2
 ## Bug Fixes
 - Polyfill `Object.assign` for IE
+
+# v2.0.2
+## Improvements
+- Use Bili instead of Rollup
