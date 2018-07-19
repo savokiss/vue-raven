@@ -19,3 +19,7 @@
 # v2.0.2
 ## Improvements
 - Use Bili instead of Rollup
+
+# v2.1.0
+## Features
+- Add option `env` for records environments

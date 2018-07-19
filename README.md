@@ -78,6 +78,7 @@ export default {
 | Option  | Type | Default  | Info |
 | ------------- | ------------- | ------------- | ------------- |
 | dsn  | `String` | `''` | The Data Source Name |
+| env  | `String` | `'production'` | The Environment Name |
 | version | `String` | `''` | Provide Your App Version |
 | disableReport | `Boolean` | `false` | Disable All Report In Your App, You Can Use `process.env.NODE_ENV === 'development'` For Development |
 | disableVueReport | `Boolean` | `false` | Disable Auto Report In Vue |

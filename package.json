@@ -1,6 +1,6 @@
 {
   "name": "@ecg/vue-raven",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "vue && raven.js intergration",
   "main": "dist/vue-raven.js",
   "module": "dist/vue-raven.es.js",

@@ -1,5 +1,5 @@
 /*!
- * @ecg/vue-raven v2.0.2
+ * @ecg/vue-raven v2.1.0
  * (c) 2018-present savokiss <jaynaruto@qq.com>
  * Released under the MIT License.
  */
@@ -31,6 +31,7 @@ var plugin = {
 
     var _options = _extends({
       dsn: options.dsn || '',
+      env: options.env || 'production',
       version: options.version || '',
       disableReport: options.disableReport || false,
       disableVueReport: options.disableVueReport || false
@@ -41,18 +42,16 @@ var plugin = {
       console.log('Sentry has disabled');
     }
 
-    Raven.config(_options.dsn);
+    Raven.config(_options.dsn, {
+      environment: _options.env,
+      release: _options.version
+    });
 
     if (!_options.disableVueReport) {
       Raven.addPlugin(RavenVue, Vue);
     }
 
     Raven.install();
-
-    if (_options.version) {
-      Raven.setRelease(_options.version);
-    }
-
     Vue.prototype.$raven = Raven;
   }
 };

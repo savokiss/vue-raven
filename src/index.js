@@ -5,6 +5,7 @@ const plugin = {
   install (Vue, options = {}) {
     const _options = Object.assign({
       dsn: options.dsn || '',
+      env: options.env || 'production',
       version: options.version || '',
       disableReport: options.disableReport || false,
       disableVueReport: options.disableVueReport || false
@@ -15,17 +16,16 @@ const plugin = {
       console.log('Sentry has disabled')
     }
 
-    Raven.config(_options.dsn)
+    Raven.config(_options.dsn, {
+      environment: _options.env,
+      release: _options.version
+    })
 
     if (!_options.disableVueReport) {
       Raven.addPlugin(RavenVue, Vue)
     }
 
     Raven.install()
-
-    if (_options.version) {
-      Raven.setRelease(_options.version)
-    }
 
     Vue.prototype.$raven = Raven
   }
