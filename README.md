@@ -82,6 +82,7 @@ export default {
 | version | `String` | `''` | Provide Your App Version |
 | disableReport | `Boolean` | `false` | Disable All Report In Your App, You Can Use `process.env.NODE_ENV === 'development'` For Development |
 | disableVueReport | `Boolean` | `false` | Disable Auto Report In Vue |
+| config | `Boolean` | `Object` | Extra config for sentry |
 
 ## Related Projects
 - [raven-js](https://github.com/getsentry/raven-js)
