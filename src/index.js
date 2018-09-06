@@ -8,7 +8,8 @@ const plugin = {
       env: options.env || 'production',
       version: options.version || '',
       disableReport: options.disableReport || false,
-      disableVueReport: options.disableVueReport || false
+      disableVueReport: options.disableVueReport || false,
+      config: {}
     }, options)
 
     if (_options.disableReport) {
@@ -18,7 +19,8 @@ const plugin = {
 
     Raven.config(_options.dsn, {
       environment: _options.env,
-      release: _options.version
+      release: _options.version,
+      ..._options.config
     })
 
     if (!_options.disableVueReport) {

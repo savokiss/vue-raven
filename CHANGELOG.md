@@ -23,3 +23,7 @@
 # v2.1.0
 ## Features
 - Add option `env` for records environments
+
+# v2.2.0
+## Features
+- Support extra config
